@@ -1,0 +1,708 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+* {
+    border: 2px solid red;
+}
+*/
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-size: 1.6rem; /* 16px */
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+    color: rgb(26, 21, 59);
+    background-color: ivory;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.main-container {
+    max-width: 100%;
+    margin: 0 auto; 
+    padding: 0px;
+}
+
+
+a:link {
+    color: rgb(69, 64, 99);
+    text-decoration: none;
+}
+
+a:visited {
+    color: rgb(26, 21, 59);
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkslateblue;
+    text-decoration: none;
+}
+
+a:active {
+    color: darkred;
+    text-decoration: none;
+}
+
+/*header*/
+
+.header {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    background-image: url('../resources/images/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+    overflow: hidden;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+
+.header img {
+    opacity: 20%;
+}
+
+.header h1 {
+    font-size: 7rem;
+    padding: 15px 20px 0px 20px;
+    line-height: 1;
+}
+
+.header h2 {
+    padding: 0px 20px 20px 20px;
+}
+
+
+/*navigation*/
+
+.nav {
+    padding: 5px;
+}
+
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+    font-size: 1.1em;
+    
+}
+
+.nav ul li {
+    margin: 10px 80px;
+}
+
+/*mission statement*/
+
+.mission-statement {
+    
+    background-color: rgb(224, 189, 210);
+    font-family: 'dancing script';
+    color: rgb(26, 21, 59);
+    padding: 10px;
+    margin-bottom: 30px;
+    justify-items: center;
+    font-size: 3em;
+    font-style: italic;
+    font-weight: 600;
+    border-radius: 10px;
+    opacity: 0.7;
+    box-shadow: 0 0 0 2px rgb(69, 64, 99);
+    display: flex;
+    align-items: center; /* Vertically centers the items, optional */
+    gap: 30px; /* Adds space between items, optional */
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+    }
+
+.mission-statement img {
+    width: 240px;
+}
+
+.mission-statement p {
+    margin-right: 15px;
+}
+
+/*products*/
+
+.products, .language-learning {
+    text-align: center;
+    padding: 10px;
+    padding-top: 40px;
+
+}
+
+h3 {
+    font-size: 2em;
+    text-align: center;
+    padding: 15px;
+}
+
+/*seasonal events*/
+
+
+.seasons-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;  
+    justify-content: center;
+    width: 70%; 
+    margin: 0 auto;
+    padding: 10px;
+}
+
+#spring, #summer, #autumn, #winter {
+    width: 45%; /* Each item takes up 50% of the container minus the gap */
+    padding: 30px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    text-align: center; 
+
+    }
+
+.seasons img {
+        width: 100%; 
+        height: auto; 
+        border-radius: 5px;
+}
+
+.seasons h3 {
+    margin-top: 20px;
+    font-size: 1.2em;
+}
+
+.seasons h4 {
+    max-width: 70%; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+/*courses*/
+
+
+.courses ul {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.courses ul li {
+    flex: 1 1 22%; 
+    box-sizing: border-box;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;  
+}
+
+.course-img {
+    max-width: 150px;
+    height: auto;
+    margin: 20px auto 20px;  
+    display: block;
+}
+
+
+.courses p {
+    text-decoration: underline;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.online-lessons {
+    position: relative;
+    border: 2px solid rgb(26, 21, 59);;
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('../resources/images/Classroom.jpg');
+    background-size: cover;
+    background-position: bottom;
+    padding: 20px 0px;
+    max-width: 60%;
+    margin: 0 auto 40px auto; 
+    display: block; 
+    text-align: center; 
+    margin-top: 30px;
+}
+
+
+.online-lessons .language {
+    padding: 15px;
+    font-size: 2.5rem;
+    text-decoration: underline;
+}
+
+.language-coaching {
+    border: 2px solid rgb(26, 21, 59);;
+    background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url('../resources/images/tea.jpg');
+    background-size: cover;
+    background-position: top;
+    padding: 20px 0px;
+    max-width: 60%;
+    margin: 0 auto; 
+    display: block; 
+    text-align: center; 
+    margin-bottom: 30px;
+}
+
+.language-coaching p {
+    padding: 30px;
+    font-size: 2rem;
+    text-decoration: underline;
+}
+
+
+.books {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;
+    justify-content: center;
+    width: 70%; 
+    margin: 0 auto;
+    padding: 20px;
+ 
+}
+
+.books h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em; 
+    margin-bottom: 0px; 
+}
+
+.novel { 
+    flex: 1 1 45%; 
+    box-sizing: border-box; 
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.books #book-img1, #book-img2 {
+    height: 300px;
+    width: auto;
+    display: block;
+    margin: 0 auto;
+
+}
+
+.books #link {
+    text-decoration: underline;
+    font-size: 1.5rem;
+    line-height: 3.5rem;
+    margin-top: 10px;
+    text-align: center; 
+    max-width: 50%; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.books p {
+    margin-top: 10px;
+    text-align: center; 
+    max-width: 50%; 
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.language-learning {
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 40px;  
+    justify-content: center;
+    width: 80%; 
+    margin: 0 auto;
+    padding: 10px;
+    box-sizing: border-box;
+    align-items: flex-start;
+}
+
+.language-learning h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 2em; 
+    margin-top: 0px;
+    margin-bottom: 0px; 
+    padding-top: 0px;
+}
+
+.language-learning .article-img {
+    flex: 1 1 45%; 
+    box-sizing: border-box;
+    padding: 10px;
+    max-width: 200px; 
+    text-align: center; 
+}
+
+.language-learning .article-img img {
+    width: 150px;  
+    height: 150px; 
+    object-fit: cover; 
+}
+
+.mainfoot {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    justify-content: center;
+    align-items: center;
+    color: rgb(26, 21, 59);
+    background-color: #6a737d;
+    text-align: center; 
+    line-height: 2.5;
+    width: 100%;
+}
+
+.contact p {
+    font-size: 1em;
+    text-decoration: underline;
+}
+
+.contact h3 {
+    font-size: 1.4em;
+    padding-bottom: 0px;
+}
+
+.contact h5 {
+    font-size: 1em;
+}
+
+.social-media {
+    display: flex;
+    gap: 20px;
+}
+
+.contact #email {
+    text-decoration: none;
+}
+
+.copyright {
+    color: rgb(210, 210, 211);
+    padding-top: 10px;
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    
+}
+
+/* Media query for screens smaller than 480px */
+@media (max-width: 480px) {
+    .header {
+        display: flex;
+        justify-content: left;
+        text-align: left;
+        flex-direction: column;
+        background-image: url('../resources/images/banner.png');
+        background-size: cover;
+        background-position: center;
+        height: 150px;
+        overflow: hidden;
+        padding-left: 10px;
+        padding-bottom: 30px;
+    }
+    
+    .header img {
+        opacity: 20%;
+    }
+    
+    .header h1 {
+        font-size: 3.5rem;
+        padding: 15px 20px 0px 20px;
+        line-height: 0.8;
+        margin-top: 5px;
+        margin-left: 0px;
+        padding-left: 5px;
+        padding-bottom: 10px;
+    }
+    
+    .header h2 {
+        padding: 0px 20px 20px 5px;
+        font-size: 1.5rem;
+        max-width: 70%;
+        line-height: 1.2;
+
+    }
+    
+    .nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav ul li {
+        margin-right: 0;
+        margin-left: 0;
+        line-height: 0.7;
+    }
+
+    .mission-statement {
+        display: flex;
+        flex-direction: column;
+        margin: 5px 0px 0px 0px;
+        justify-items: center;
+        font-style: italic;
+        font-weight: 600;
+        border-radius: 10px;
+        align-items: center; 
+        justify-content: center;
+        width: 90%;
+        margin: 0 auto;
+        }
+    
+    .mission-statement img {
+        width: 55%;
+    }
+    
+    .mission-statement p {
+        margin-right: 5px;
+        font-size: 2.5rem;;
+        text-align: center;
+        width: 90%;
+    }
+
+    .mission-statement {
+        font-size: 2rem; 
+        padding: 5px;
+        gap: 10px;
+    }
+
+    .events {
+        margin-top: 0px;
+    }
+    
+    .seasons-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;  
+        justify-content: center;
+        width: 100%; 
+        margin: 0 auto;
+        padding: 5px 5px 30px 5px;
+    }
+    
+    #spring, #summer, #autumn, #winter {
+        width: 100%; /* Each item takes up 50% of the container minus the gap */
+        padding: 10px;
+        box-sizing: border-box;
+        border-radius: 5px;
+        text-align: center; 
+    
+        }
+    
+    .seasons img {
+            width: 98%; 
+            height: auto; 
+            border-radius: 5px;
+    }
+    
+    .seasons h3 {
+        margin-top: 0px;
+        font-size: 1.2em;
+    }
+    
+    .seasons h4 {
+        max-width: 90%; 
+        margin-left: auto;
+        margin-right: auto; 
+    }
+
+    .products {
+        padding: 0px;
+    }
+
+    .courses {
+        width: 100%;
+    }
+
+    .courses ul {
+        width: 100%;
+        gap: 10px;
+        padding: 0px, 0px, 0px, 30px;
+
+    }
+
+    .courses ul li {
+        flex: 1 1 100%; /* Stacks courses vertically */
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+        gap: 2px;
+    }
+
+    .courses ul li p {
+    padding: 0px;
+    font-size: 1.8rem;
+}
+
+    .online-lessons {
+        position: relative;
+        border: 2px solid rgb(26, 21, 59);;
+        background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), url('../resources/images/Classroom.jpg');
+        background-size: cover;
+        background-position: bottom;
+        padding: 0px;
+        max-width: 70%;
+        margin: 10px auto 30px auto; 
+        display: block; 
+        text-align: center; 
+    }
+
+    .online-lessons .language {
+        padding: 10px;
+        font-size: 2.5rem;
+        text-decoration: underline;
+        gap: 155px;
+    }
+
+    .language-coaching {
+        border: 2px solid rgb(26, 21, 59);;
+        background: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), url('../resources/images/tea.jpg');
+        background-size: cover;
+        background-position: top;
+        padding: 0px;
+        max-width: 70%;
+        margin: 0 auto 10px auto; 
+        display: block; 
+        text-align: center; 
+    }
+
+    .language-coaching p {
+        padding: 20px;
+        font-size: 2.5rem;
+        text-decoration: underline;
+    }
+
+    .books {
+        gap: 15px;
+        width: 100%; 
+        padding: 10px;
+     
+    }
+    
+    .books h3 {
+        width: 100%;
+        font-size: 2em; 
+        margin-bottom: 0px; 
+    }
+    
+    .novel { 
+        margin-bottom: 15px;
+
+    }
+    
+    .books #link {
+        font-size: 2.2rem;
+        line-height: 2.5rem;
+        max-width: 70%; 
+    }
+    
+    .books p {
+        margin-top: 10px;
+        text-align: center; 
+        max-width: 85%; 
+    }
+
+    .novel {
+        width: 100%;
+        }
+
+    .language-learning {
+        width: 100%; 
+    }
+
+    .language-learning .article-img {
+        max-width: 100%; 
+        padding: 0;
+    }
+    
+    .language-learning .article-img img {
+        width: 150px;  
+        height: 150px; 
+        object-fit: cover; 
+    }
+
+    .language-learning h3 {
+        margin-top: 30px;
+    }
+
+    .article-img p {
+        padding: 5px;
+        margin-bottom: 0px;
+    }
+
+    .mainfoot {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        color: rgb(26, 21, 59);
+        background-color: #6a737d;
+        text-align: center; 
+        line-height: 2.5;
+    }
+    
+    .contact p {
+        font-size: 1em;
+        text-decoration: underline;
+    }
+    
+    .contact h3 {
+        font-size: 1.4em;
+        padding-bottom: 0px;
+    }
+    
+    .contact h5 {
+        font-size: 1em;
+    }
+    
+    .social-media {
+        display: flex;
+        gap: 20px;
+    }
+    
+    .contact #email {
+        text-decoration: none;
+    }
+    
+    .copyright {
+        color: rgb(210, 210, 211);
+        padding-top: 10px;
+    }
+    
+}
+
+/* Media query for large screens */
+@media (min-width: 1200px) {
+    
+    }
+
+    /* Media query for screens smaller than 480px */
+@media (max-width: 320px) {
+    .header h1 {
+        font-size: 3rem;
+        max-width: 100%;
+    }
+}
